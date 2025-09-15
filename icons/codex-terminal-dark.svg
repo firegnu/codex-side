@@ -1,0 +1,31 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Colors tuned for dark theme backgrounds -->
+  <!-- Use light strokes/fills for contrast on dark UI -->
+  <!-- Base color for icon elements on dark theme -->
+  <style>
+    .base { stroke: #E7E7E7; fill: #E7E7E7; }
+    .stroke { stroke: #E7E7E7; }
+    .fill { fill: #E7E7E7; }
+  </style>
+
+  <!-- Terminal window background -->
+  <rect x="1" y="2" width="14" height="12" rx="1" fill="#E7E7E7" fill-opacity="0.18" stroke="#E7E7E7" stroke-width="1"/>
+
+  <!-- Terminal header dots -->
+  <circle cx="3" cy="4" r="0.5" fill="#E7E7E7" fill-opacity="0.7"/>
+  <circle cx="4.5" cy="4" r="0.5" fill="#E7E7E7" fill-opacity="0.7"/>
+  <circle cx="6" cy="4" r="0.5" fill="#E7E7E7" fill-opacity="0.7"/>
+
+  <!-- Command prompt symbol -->
+  <path d="M3 7 L5 9 L3 11" stroke="#E7E7E7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Cursor -->
+  <rect x="6" y="10" width="4" height="1" fill="#E7E7E7"/>
+
+  <!-- Codex symbol (hexagon with 'C') -->
+  <g transform="translate(10, 6)">
+    <polygon points="2,0 4,1 4,3 2,4 0,3 0,1" fill="#E7E7E7" fill-opacity="0.9" stroke="#E7E7E7" stroke-width="0.5"/>
+    <text x="2" y="2.8" font-family="monospace" font-size="2.5" font-weight="bold" text-anchor="middle" fill="#1E1E1E">C</text>
+  </g>
+</svg>
+

@@ -1,0 +1,40 @@
+{
+  "name": "codex-side-terminal",
+  "displayName": "Codex Side Terminal",
+  "description": "Opens a side terminal and runs codex in the current file's directory",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.64.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onCommand:codex-side-terminal.openTerminalWithCodex"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codex-side-terminal.openTerminalWithCodex",
+        "title": "Open Terminal with Codex",
+        "icon": {
+          "light": "./icons/codex-terminal-light.svg",
+          "dark": "./icons/codex-terminal-dark.svg"
+        }
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "codex-side-terminal.openTerminalWithCodex",
+          "group": "navigation@9",
+          "when": "true",
+          "icon": {
+            "light": "./icons/codex-terminal-light.svg",
+            "dark": "./icons/codex-terminal-dark.svg"
+          }
+        }
+      ]
+    }
+  }
+}
