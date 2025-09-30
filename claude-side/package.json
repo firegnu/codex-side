@@ -1,0 +1,34 @@
+{
+  "name": "claude-side-terminal",
+  "displayName": "Claude Side Terminal",
+  "description": "Opens a side terminal and runs claude in the current file's directory",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.64.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onCommand:claude-side-terminal.openTerminalWithClaude"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "claude-side-terminal.openTerminalWithClaude",
+        "title": "Open Terminal with Claude",
+        "icon": "./icons/claude-terminal.png"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "claude-side-terminal.openTerminalWithClaude",
+          "group": "navigation@9",
+          "when": "true",
+          "icon": "./icons/claude-terminal.png"
+        }
+      ]
+    }
+  }
+}
